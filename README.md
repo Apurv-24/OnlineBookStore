@@ -24,21 +24,13 @@ A visually rich, fully responsive **Spotify Clone** built using pure **HTML**, *
 
 ## 📁 Project Structure
 
+```bash
 spotify-clone/
 │
 ├── index.html # Main webpage structure
 ├── style.css # Styles for layout and visual effects
 └── script.js # Logic for player controls and interactivity
-
-yaml
-Copy
-Edit
-
----
-
-## 📸 Screenshots
-
-> *(Optional: Add screenshots of your project UI using Markdown image tags)*
+```
 
 ---
 
@@ -58,18 +50,19 @@ Edit
    ```bash
    git clone https://github.com/your-username/spotify-clone.git
    cd spotify-clone
-Open index.html in your browser.
+   ```
+   Open index.html in your browser.
+   No server setup needed. Everything is client-side.
 
-No server setup needed. Everything is client-side.
+---
 
-🔮 Future Enhancements
-Add multiple songs per playlist
+## 🔮 Future Enhancements
+   Add multiple songs per playlist
+   Integrate Spotify Web API or any real audio streaming backend
+   Add login/auth and personalized user data
+   Support mobile gestures
 
-Integrate Spotify Web API or any real audio streaming backend
+---
 
-Add login/auth and personalized user data
-
-Support mobile gestures
-
-📝 License
-This project is licensed under the MIT License.
+## 📝 License
+   This project is licensed under the MIT License.
