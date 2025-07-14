@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">Spotify</div>
+        <ul class="nav">
+            <li>Home</li>
+            <li>Search</li>
+            <li>Your Library</li>
+        </ul>
+        <div class="playlists">
+            <h4>Playlists</h4>
+            <ul>
+                <li>My Playlist #1</li>
+                <li>My Playlist #2</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <input type="text" placeholder="Search for Artists, Songs, or Podcasts">
+        </div>
+        <div class="playlist-section">
+            <h2>Good Morning</h2>
+            <div class="playlists-grid">
+                <div class="playlist-card" data-playlist="0">
+                    <img src="https://i.scdn.co/image/ab67706f00000002cbb8b7b3e3e1e0e0e0e0e0e0e0e0e0e0" alt="Chill Hits">
+                    <span>Chill Hits</span>
+                </div>
+                <div class="playlist-card" data-playlist="1">
+                    <img src="https://i.scdn.co/image/ab67706f00000002b4e8b7b3e3e1e0e0e0e0e0e0e0e0e0e0" alt="Top 50 Global">
+                    <span>Top 50 Global</span>
+                </div>
+                <div class="playlist-card" data-playlist="2">
+                    <img src="https://i.scdn.co/image/ab67706f00000002e0e1e0e0e0e0e0e0e0e0e0e0e0e0e0e0" alt="Mood Booster">
+                    <span>Mood Booster</span>
+                </div>
+                <div class="playlist-card" data-playlist="3">
+                    <img src="https://i.scdn.co/image/ab67706f00000002e1e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0" alt="Peaceful Piano">
+                    <span>Peaceful Piano</span>
+                </div>
+                <div class="playlist-card" data-playlist="4">
+                    <img src="https://i.scdn.co/image/ab67706f00000002e2e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0" alt="RapCaviar">
+                    <span>RapCaviar</span>
+                </div>
+                <div class="playlist-card" data-playlist="5">
+                    <img src="https://i.scdn.co/image/ab67706f00000002e3e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0" alt="Rock Classics">
+                    <span>Rock Classics</span>
+                </div>
+            </div>
+            <div class="selected-playlist-info">
+                <img class="selected-playlist-cover" src="https://i.scdn.co/image/ab67706f00000002cbb8b7b3e3e1e0e0e0e0e0e0e0e0e0e0" alt="Playlist Cover">
+                <span class="selected-playlist-name">Chill Hits</span>
+            </div>
+            <div class="song-list-section">
+                <h3>Songs</h3>
+                <ul class="song-list"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-player">
+        <div class="song-info">
+            <img class="song-cover-large" src="https://i.scdn.co/image/ab67616d0000b273e0e1e0e0e0e0e0e0e0e0e0e0" alt="Song Cover">
+            <div class="song-meta">
+                <div class="song-title">Song Title</div>
+                <div class="song-artist">Artist Name</div>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button id="shuffle">🔀</button>
+            <button id="prev">⏮️</button>
+            <button id="play">▶️</button>
+            <button id="next">⏭️</button>
+            <button id="repeat">🔁</button>
+        </div>
+        <div class="progress-bar">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress" value="0" min="0" max="100">
+            <span id="duration">3:30</span>
+        </div>
+        <div class="volume-control">
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
